@@ -2,8 +2,13 @@
 //health
 maxhp = 3;
 hp = maxhp;
+//move ini
+right = 0;
+left = 0;
+up = 0;
+push = 0;
 //states
-enum player_state
+enum enemy_state
 {
 	free,
 	attack,
@@ -11,17 +16,16 @@ enum player_state
 	fall,
 	stun
 }
-pstate = player_state.free;
-//Movement
+estate = enemy_state.free;
+//Movement (unsure if needed for now)
 vsp = 0;
 hsp = 0;
 grav = 0.2;
 sped = 5;
-push = 0;
 //spawn in body
-instance_create_layer(x+18,y-20,"backlimb",obj_player_head);
-instance_create_layer(x+12,y-2,"mainarm",obj_player_arm);
-instance_create_layer(x,y,"backlimb",obj_back_arm);
+instance_create_layer(x+18,y-20,"backlimb",obj_enemy_head);
+instance_create_layer(x+12,y-2,"mainarm",obj_enemy_arm);
+instance_create_layer(x,y,"backlimb",obj_enemy_back_arm);
 //colors
 randomize();
 hue = irandom_range(0, 256);
