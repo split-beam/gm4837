@@ -55,3 +55,22 @@ if(hp <= 0)
 	//put more stuff here
 	instance_destroy();
 }
+//combat
+if (mouse_check_button_pressed(mb_left) && pstate == player_state.free)
+{
+	if(mainarm == true)
+	{
+		
+		if(instance_exists(obj_player_arm) && pcool == false)
+		{
+			obj_player_arm.sprite_index = spr_player_limb_at
+			punch = true;
+			pcool = true;
+			obj_player_arm.alarm[0] = 20;	
+		}
+	}
+	else if(mainarm == false)
+	{
+		obj_player_head.headbutt = true;
+	}
+}
