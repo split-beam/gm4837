@@ -4,7 +4,7 @@
     "path": "sprites/spr_player_limb/spr_player_limb.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {

@@ -20,7 +20,11 @@ if(instance_exists(obj_player))
 	{
 		left = 0;
 		right = 0;
-		//attack state code
+		if(mainarm == true && alarm[1]<= 0)
+		{
+			alarm[1] = irandom_range(40,40*4)
+		}
+	
 	}
 	/*else if (distance_to_object(obj_player) > 400 && shootarm == true)
 	{

@@ -74,3 +74,19 @@ if (mouse_check_button_pressed(mb_left) && pstate == player_state.free)
 		obj_player_head.headbutt = true;
 	}
 }
+//knockback
+if (pstate == player_state.stun)
+{
+	hsp = push;
+	push = lerp(push, 0, 0.1);
+	
+	if (!place_free(x+hsp,y))
+	{
+		while (place_free(x+sign(hsp),y))
+		{
+			x += sign(hsp);
+		}
+		hsp = 0
+	}
+	x += hsp;	
+}
