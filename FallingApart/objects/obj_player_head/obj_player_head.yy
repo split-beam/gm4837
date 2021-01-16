@@ -7,7 +7,10 @@
   "visible": false,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_player_prnt",
+    "path": "objects/obj_player_prnt/obj_player_prnt.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

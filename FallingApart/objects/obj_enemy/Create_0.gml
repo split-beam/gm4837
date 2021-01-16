@@ -32,7 +32,7 @@ hue = irandom_range(0, 256);
 sat = irandom_range(100,150);
 val = irandom_range(120,160);
 //combat
-pcool = false;
+ecool = false;
 punch = false;
 //limbs
 headon = true;
